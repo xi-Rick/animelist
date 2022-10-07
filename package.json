@@ -1,0 +1,24 @@
+{
+  "name": "Animelist",
+  "version": "1.0.0",
+  "author": "Dana Davis (https://www.danadavis.dev/)",
+  "license": "MIT",
+  "scripts": {
+    "start": "node -r esm src/index.js"
+  },
+  "main": "src/index.js",
+  "dependencies": {
+    "discord.js": "^12",
+    "esm": "^3.2.25",
+    "node-fetch": "^2.6.1",
+    "striptags": ">=3.2.0",
+    "turndown": "^6.0.0",
+    "uws": "^100.0.1",
+    "lodash": ">=4.17.21",
+    "ws": ">=6.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xi-Rick/animelist.git"
+  }
+}

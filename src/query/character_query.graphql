@@ -1,0 +1,13 @@
+query($id: Int, $search: String) {
+	Character(id: $id, search: $search) {
+		url: siteUrl
+		name {
+			full
+		}
+		image {
+			large
+		}
+		favourites
+		description(asHtml: true)
+	}
+}
