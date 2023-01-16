@@ -31,42 +31,37 @@ client.on("message", (message) => {
   if (message.content === "h{}") {
     const embed = new discord.MessageEmbed()
       .setColor("#ffffff")
-      .setAuthor("Help Guide", "https://i.imgur.com/lRLJgEz.png")
+      .setAuthor(
+        "Help Guide",
+        "https://cdn.discordapp.com/attachments/432707494532349972/1064615912776417341/logo.png"
+      )
       .setDescription(
         "Commands are made in a way to be used in a sentence or by themselves altogether. As of now you can use commands for Anime, Manga, Users and Characters on Anilist. Content flagged as Adult will not repsond."
       )
       .addField("\u200b", "\u200b")
       .addField(
-        "<:black:1028008749392199781> a{Anime Name}",
+        "a{Anime Name}",
         "You should watch a{Bakuman}! Its really good.",
         true
       )
       .addField(
-        "<:black:1028008749392199781> m{Manga Name}",
+        "m{Manga Name}",
         "Man, m{Kimetsu no Yaiba} was such a good manga.",
         true
       )
       .addField(
-        "<:black:1028008749392199781> u{User Name}",
+        "u{User Name}",
         "Check out my boy u{Rickk}'s profile. What a weeb.",
         true
       )
       .addField(
-        "<:black:1028008749392199781> c{Character Name}",
+        "c{Character Name}",
         "You dont know c{Rin Tohsaka}? You need to watch Fate.",
         true
       )
-      .addField(
-        "<:black:1028008749392199781> h{}",
-        "Brings up this wonderful help guide.",
-        true
-      )
+      .addField("h{}", "Brings up this wonderful help guide.", true)
       .addField("\u200b", "\u200b")
-      .addField(
-        "<a:love:741628964899913840> Have fun and enjoy",
-        "\u200b",
-        true
-      );
+      .addField("Have fun and enjoy", "\u200b", true);
     message.channel.send(embed);
   }
 });
